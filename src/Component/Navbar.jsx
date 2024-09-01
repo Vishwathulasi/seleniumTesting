@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Chef from '../assests/image/chef.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,10 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg fixed z-50 top-0 left-0 w-full">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
+            {/* Adjust the image size here */}
+            <img src={Chef} alt="Chef Logo" className="h-10 w-10 mr-2" />
             <a href="/" className="text-2xl font-bold text-red-500">
               DineSmart
             </a>
@@ -24,7 +27,7 @@ const Navbar = () => {
             <a href="/about" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-lg font-medium">
               About
             </a>
-            <a href="/contact" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-lg font-medium">
+            <a href="/add-restaurant" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-lg font-medium">
               Add restaurants
             </a>
             <Link to="/signup" className="bg-red-600 text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-red-700 transition duration-300">
@@ -55,6 +58,9 @@ const Navbar = () => {
           </a>
           <a href="/contact" className="block text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-base font-medium">
             Contact
+          </a>
+          <a href="/add-restaurant" className="block text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-base font-medium">
+            Add Restaurant
           </a>
           <a href="/signin" className="block bg-red-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-red-700 transition duration-300">
             Sign In

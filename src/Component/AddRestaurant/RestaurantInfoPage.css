@@ -1,0 +1,21 @@
+/* src/components/RestaurantInfoPage.css */
+
+.restaurant-info-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Optional: to add some spacing after the video */
+  }
+  
+  /* Styling the video */
+  .restaurant-info-centered-video {
+    height: 100px;
+    border-radius: 100%; /* Optional: to add rounded corners to the video */
+  }
+  .restaurant-info-submit-button{
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+  }

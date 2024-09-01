@@ -1,0 +1,48 @@
+/* src/components/PersonalInfoPage.css */
+
+.personal-info-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Optional: to add some spacing after the video */
+  }
+  
+  /* Styling the video */
+  .personal-info-centered-video {
+    height: 100px;
+    border-radius: 100%; /* Optional: to add rounded corners to the video */
+  }
+  .personal-info-submit-button{
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    margin-right: 5rem;
+  }
+
+  form {
+    max-width: 90%; /* Increase width for smaller screens */
+  }
+
+  .personal-info-submit-button {
+    width: 100%; /* Full-width button for smaller screens */
+    text-align: center;
+  }
+}
+
+/* Media query for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  form {
+    max-width: 100%; /* Maximize form width */
+  }
+
+  .personal-info-centered-video {
+    height: 80px; /* Reduce video size */
+  }
+}

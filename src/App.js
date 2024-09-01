@@ -1,19 +1,25 @@
-import React from "react";
-import SignUp from "./Component/SignUp";
-import { BrowserRouter as Router, Routes,Route, BrowserRouter } from 'react-router-dom';
-import HomePage from "./Component/HomePage";
-import SignupForm from "./Component/SignUpForm";
+import * as React from 'react';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import QRCode from './Component/AddRestaurant/QRCodePage.jsx'
+import AddRestaurant from './Component/AddRestaurant/AddRestaurant.jsx';
+import HomePage from './Component/HomePage.jsx';
+
+
+const theme = createTheme(); // Customize your theme if needed
+
 function App() {
   return (
-  <BrowserRouter>
-      <div className="App">
-      <Routes>
-        <Route path="/signup" element={<SignUp/>}/>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/signupform" element={<SignupForm/>}/>
-      </Routes>
-      </div>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/qrcode" element={<QRCode/>} />
+          <Route path="/add-restaurant" element={<AddRestaurant/>} />
+
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

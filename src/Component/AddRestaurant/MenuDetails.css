@@ -1,0 +1,79 @@
+/* Menu Details Page Styles */
+.menu-details-page {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.menu-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-centered-video {
+    height: 100px;
+    border-radius: 100%;
+}
+
+.upload-container {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.upload-container.dragover {
+    border-color: #000;
+    background-color: #f9f9f9;
+}
+
+.upload-container input[type="file"] {
+    display: none;
+}
+
+.upload-list {
+    margin-top: 20px;
+}
+
+.upload-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.upload-item-progress {
+    width: 80%;
+}
+
+.upload-item-progress-bar {
+    height: 8px;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.menu-details-submit-button {
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.qr-code-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.qr-code-container img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}

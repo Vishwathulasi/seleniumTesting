@@ -8,7 +8,6 @@ const HomePage = () => {
     <div>
         <Navbar/>
         <LandingPage/>
-     
     </div>
   )
 }
